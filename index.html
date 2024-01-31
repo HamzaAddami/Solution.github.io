@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click and Check</title>
+</head>
+<body>
+
+<button onclick="checkNames()">Click Right to Check Names</button>
+
+<script>
+    function checkNames() {
+        var names = ["John", "Jane", "Bob", "Alice", "Jack"];
+
+        // Loop over the array
+        for (var i = 0; i < names.length; i++) {
+            var currentName = names[i];
+
+            if (currentName.charAt(0).toLowerCase() === 'j') {
+                console.log("Goodbye " + currentName);
+            } else {
+                console.log("Hello " + currentName);
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
